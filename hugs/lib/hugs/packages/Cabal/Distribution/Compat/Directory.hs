@@ -1,0 +1,136 @@
+{-# OPTIONS_GHC -cpp #-}
+-- #hide
+module Distribution.Compat.Directory (
+        module System.Directory,
+
+ 	findExecutable, copyFile, getHomeDirectory, createDirectoryIfMissing,
+        removeDirectoryRecursive,
+
+        getDirectoryContentsWithoutSpecial
+  ) where
+
+
+
+
+
+
+
+
+
+
+
+import System.Directory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+getDirectoryContentsWithoutSpecial :: FilePath -> IO [FilePath]
+getDirectoryContentsWithoutSpecial =
+   fmap (filter (not . flip elem [".", ".."])) . getDirectoryContents

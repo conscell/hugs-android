@@ -1,0 +1,2 @@
+#! /bin/sh
+runhugs -98 /data/data/jackpal.androidterm/app_HOME/hugs/lib/hugs/programs/hsc2hs/Main.hs -I/data/data/jackpal.androidterm/app_HOME/hugs/lib/hugs/include "$@"

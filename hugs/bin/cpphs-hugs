@@ -1,0 +1,2 @@
+#! /bin/sh
+runhugs /data/data/jackpal.androidterm/app_HOME/hugs/lib/hugs/programs/cpphs/Main.hs "$@"
