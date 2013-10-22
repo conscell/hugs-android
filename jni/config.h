@@ -12,7 +12,7 @@
 /* #undef CHAR_ENCODING_LOCALE */
 
 /* Define to 1 to use the UTF-8 Char encoding. */
-/* #undef CHAR_ENCODING_UTF8 */
+#define CHAR_ENCODING_UTF8 1
 
 /* Define to 1 if you want to perform runtime tag-checks as an internal
    consistency check. This makes Hugs run very slowly - but is very effective

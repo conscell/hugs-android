@@ -107,3 +107,79 @@ LOCAL_STATIC_LIBRARIES := readline
 LOCAL_CFLAGS := -DFFI_COMPILER
 
 include $(BUILD_EXECUTABLE)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Alloc
+LOCAL_SRC_FILES := lib/Alloc.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Error
+LOCAL_SRC_FILES := lib/Error.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Storable
+LOCAL_SRC_FILES := lib/Storable.c \
+lib/Storable_aux.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Ptr
+LOCAL_SRC_FILES := lib/Ptr.c
+
+#LOCAL_CFLAGS := 
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Utils
+LOCAL_SRC_FILES := lib/Utils.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Internals
+LOCAL_SRC_FILES := lib/Internals.c \
+lib/dirUtils.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Signals
+LOCAL_SRC_FILES := lib/Signals.c \
+lib/killpg.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := pInternals
+LOCAL_SRC_FILES := lib/pInternals.c \
+lib/execvpe.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
