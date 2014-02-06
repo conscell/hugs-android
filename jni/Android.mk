@@ -183,3 +183,13 @@ lib/execvpe.c
 #LOCAL_CFLAGS :=
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE    := Base
+LOCAL_SRC_FILES := lib/Base.c \
+lib/fpstring.c
+
+#LOCAL_CFLAGS :=
+
+include $(BUILD_SHARED_LIBRARY)
